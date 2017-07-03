@@ -1,6 +1,9 @@
 <html>
     <head>
-        <title>Django Girls blog</title>
+      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+        <title>Django blog</title>
     </head>
     <body>
         <div>
@@ -8,6 +11,7 @@
         </div>
 
         {% for post in posts %}
+          <br />
           <div>
             <p>Published : {{post.published_date}}</p>
             <h3>{{post.title}}</h3>
